@@ -20,20 +20,42 @@
             android:layout_gravity="center_horizontal"
             android:src="@drawable/uninassau_logo" />
 
+        <ImageView
+            android:id="@+id/avatarImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="end"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_user"
+            android:contentDescription="Avatar"
+            android:clickable="true"
+            android:focusable="true"/>
+
         <TextView
-            android:layout_width="395dp"
+            android:id="@+id/text_welcome"
+            android:layout_width="387dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:drawablePadding="10dp"
+            android:fontFamily="sans-serif-medium"
             android:padding="10dp"
-            android:text="Seja bem vindo a plataforma, NomeDoUsuario"
+            android:text="Carregando...."
+            android:textAlignment="textStart"
             android:textColor="#FFFFFF"
             android:textSize="28sp"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
-
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Sair"
+            android:textAlignment="center" />
 
     </LinearLayout>
 
