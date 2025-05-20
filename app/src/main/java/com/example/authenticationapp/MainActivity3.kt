@@ -22,6 +22,14 @@ class MainActivity3 : AppCompatActivity() {
         val txtBoasVindas = findViewById<TextView>(R.id.text_welcome)
         val botaoLogout = findViewById<Button>(R.id.button_logout)
 
+        /* Imagem */
+        val imageProfile = findViewById<ImageView>(R.id.image_profile)
+
+        imageProfile.setOnClickListener {
+            startActivity(Intent(this, MainActivity4::class.java))
+        }
+
+        /* Exibir mensagem de bem-vindo e nome do usuário */
         val uid = auth.currentUser?.uid
         if (uid != null) {
             firestore.collection("usuarios").document(uid).get()
@@ -36,13 +44,6 @@ class MainActivity3 : AppCompatActivity() {
                 .addOnFailureListener {
                     txtBoasVindas.text = "Erro ao buscar nome"
                 }
-        }
-
-        val avatarImage = findViewById<ImageView>(R.id.avatarImage)
-
-        avatarImage.setOnClickListener {
-            val intent = Intent(this, ProfileActivity::class.java)
-            startActivity(intent)
         }
 
         botaoLogout.setOnClickListener {

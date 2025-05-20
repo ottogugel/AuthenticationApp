@@ -53,7 +53,8 @@ class MainActivity2 : AppCompatActivity() {
                                 }
 
                             } else {
-                                Toast.makeText(this, "Erro ao cadastrar: ${task.exception?.message}", Toast.LENGTH_LONG).show()
+                                //Toast.makeText(this, "Erro ao cadastrar: ${task.exception?.message}", Toast.LENGTH_LONG).show()
+                                AuthUtils.handleFirebaseAuthError(this, task.exception)
                             }
                         }
                 } else {
