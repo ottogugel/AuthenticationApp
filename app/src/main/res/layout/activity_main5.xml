@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5">
+
+    <TextView
+        android:id="@+id/nomeproduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pastel"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/precoproduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$15.20"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoproduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pastel é um alimento composto por uma massa a base de farinha a que se dá a forma de um envelope, se recheia e depois se frita por imensão em óleo fervente."
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@id/descricaoproduto"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginVertical="10dp"
+        />
+
+    <TextView
+        android:id="@+id/descricaoproduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição:"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/fotopastel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginVertical="20dp"
+        />
+
+    <TextView
+        android:id="@+id/qtdproduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade:"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/textoproduto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginVertical="30dp"
+        />
+
+    <EditText
+        android:id="@+id/linhaquantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       "
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/textoproduto"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="80dp"
+        />
+
+    <Button
+        android:id="@+id/botaocomprar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Comprar"
+        android:textSize="30dp"
+        android:textColorHint="#FFF"
+        app:layout_constraintTop_toBottomOf="@+id/qtdproduto"
+        android:layout_marginVertical="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/fotopastel"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@+id/nomeproduto"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/pastel"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

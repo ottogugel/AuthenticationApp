@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
+    android:background="#14a0b0"
     tools:context=".MainActivity2">
 
     <LinearLayout
@@ -17,8 +17,8 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/btn_star_big_on" />
+            android:layout_height="242dp"
+            app:srcCompat="@drawable/logo" />
 
         <EditText
             android:id="@+id/register_user"

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
+    android:background="#14a0b0"
     tools:context=".MainActivity3">
 
     <LinearLayout
@@ -18,8 +18,8 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/btn_star_big_on" />
+            android:layout_height="260dp"
+            app:srcCompat="@drawable/logo" />
 
         <ImageView
             android:id="@+id/image_profile"
@@ -49,6 +49,16 @@
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <Button
+            android:id="@+id/button_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Produto"
+            android:textAlignment="center" />
+
+        <Button
             android:id="@+id/button_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -57,7 +67,6 @@
             android:layout_marginEnd="20dp"
             android:text="Sair"
             android:textAlignment="center" />
-
 
 
     </LinearLayout>

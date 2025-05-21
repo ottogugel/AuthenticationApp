@@ -52,5 +52,11 @@ class MainActivity3 : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
+
+        val buttonProduct = findViewById<Button>(R.id.button_product)
+        buttonProduct.setOnClickListener {
+            startActivity(Intent(this, MainActivity5::class.java))
+        }
+
     }
 }
