@@ -30,7 +30,7 @@ class MainActivity5: AppCompatActivity() {
         val b = a.times(itens.toDouble())
 
         Toast.makeText(this, "Compra realizada com sucesso", Toast.LENGTH_LONG).show()
-        val intent = Intent(this, MainActivity2::class.java)
+        val intent = Intent(this, MainActivity3::class.java)
         intent.putExtra("valortotal", "R$"+b.toString())
         startActivity(intent)
     }

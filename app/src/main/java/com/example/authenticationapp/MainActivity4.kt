@@ -40,29 +40,41 @@ class MainActivity4 : AppCompatActivity() {
             val novoEmail = emailInput.text.toString()
             val novaSenha = senhaInput.text.toString()
 
+            // Validação da senha
+            if (novaSenha.isNotEmpty() && novaSenha.length < 6) {
+                Toast.makeText(this, "A senha deve ter mais de 6 caracteres.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener // Impede que continue
+            }
+
+            val uid = auth.currentUser?.uid
+
             // Atualizar Firestore
             if (uid != null && novoNome.isNotEmpty()) {
                 firestore.collection("usuarios").document(uid)
                     .update("nome", novoNome)
             }
 
-            // Atualizar e-mail e senha (se fornecidos)
+            // Atualizar senha (se fornecida e válida)
             auth.currentUser?.let { user ->
-                if (novoEmail.isNotEmpty() && novoEmail != user.email) {
-                    user.updateEmail(novoEmail)
-                }
                 if (novaSenha.isNotEmpty()) {
                     user.updatePassword(novaSenha)
+                        .addOnCompleteListener { task ->
+                            if (task.isSuccessful) {
+                                Toast.makeText(this, "Senha atualizada com sucesso!", Toast.LENGTH_SHORT).show()
+                            } else {
+                                Toast.makeText(this, "Erro ao atualizar senha.", Toast.LENGTH_SHORT).show()
+                            }
+                        }
                 }
-            }
-
-            // Voltar para a tela inicial.
-            val buttonBackToHome = findViewById<Button>(R.id.button_backToHome)
-            buttonBackToHome.setOnClickListener {
-                finish()
             }
 
             Toast.makeText(this, "Dados atualizados!", Toast.LENGTH_SHORT).show()
         }
+
+        val button_backToHome = findViewById<Button>(R.id.button_backToHome)
+        button_backToHome.setOnClickListener {
+            finish()
+        }
+
     }
 }

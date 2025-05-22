@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#14a0b0">
+    android:background="#15A2B2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,15 +26,15 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
+            android:drawableStart="@android:drawable/sym_action_email"
             android:background="@drawable/login_edit_background"
-            android:drawableStart="@drawable/ic_user"
             android:drawablePadding="10dp"
             android:hint="Email"
             android:textColor="@color/black"
             android:inputType="textEmailAddress"
             android:padding="10dp"
+            android:paddingStart="20dp"
             android:textColorHint="#0d3b3f"
-
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
             />
 
@@ -45,13 +45,14 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
             android:background="@drawable/login_edit_background"
-            android:drawableStart="@drawable/ic_password"
             android:drawablePadding="10dp"
             android:hint="Senha"
             android:textColor="@color/black"
             android:inputType="textPassword"
             android:padding="10dp"
+            android:paddingStart="20dp"
             android:textColorHint="#0d3b3f"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
@@ -63,7 +64,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/button_background"
-            android:text="Acessar"
+            android:text="Conectar"
             android:textAllCaps="true"
             android:textSize="21sp" />
 

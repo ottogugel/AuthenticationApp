@@ -33,7 +33,7 @@
             android:hint="Usuário"
             android:inputType="textEmailAddress"
             android:padding="10dp"
-            android:textColor="#FFFAFA"
+            android:textColor="@color/black"
             android:textColorHint="#757575"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
@@ -45,12 +45,12 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/login_edit_background"
-            android:drawableStart="@drawable/ic_user"
+            android:drawableStart="@android:drawable/sym_action_email"
             android:drawablePadding="10dp"
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:padding="10dp"
-            android:textColor="#FFFAFA"
+            android:textColor="@color/black"
             android:textColorHint="#757575"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
@@ -62,12 +62,12 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/login_edit_background"
-            android:drawableStart="@drawable/ic_password"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
             android:drawablePadding="10dp"
             android:hint="Senha"
             android:inputType="textPassword"
             android:padding="10dp"
-            android:textColor="#FFFAFA"
+            android:textColor="@color/black"
             android:textColorHint="#757575"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
@@ -79,12 +79,12 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/login_edit_background"
-            android:drawableStart="@drawable/ic_password"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
             android:drawablePadding="10dp"
             android:hint="Confirme a Senha"
             android:inputType="textPassword"
             android:padding="10dp"
-            android:textColor="#FFFAFA"
+            android:textColor="@color/black"
             android:textColorHint="#757575"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 

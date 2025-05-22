@@ -30,7 +30,7 @@
             android:contentDescription="Perfil"
             android:focusable="true"
             android:padding="8dp"
-            android:src="@drawable/ic_user" />
+            android:src="@android:drawable/ic_menu_info_details" />
 
         <TextView
             android:id="@+id/text_welcome"
